@@ -1,0 +1,318 @@
+/* FONTS: ExtraLight 200, ExtraLight 200 Italic, Medium 500 */
+/* COLORS: #243c6d (dark blue), #5f75aa (medium blue), #bbcefc (light blue), #ff85aa (pink) */
+/* box-shadow: 0px 1px 4px 1px rgb(140, 140, 143) */
+
+/* Estilos generales */
+
+.badges-contenedor1 {
+  font-size:larger;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1,h2,h3,h4,h5,
+.display-4 {
+  color: var(--dark);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: Medium 500;
+  color:#0f6cfd;
+}
+
+.seccion-oscura {
+  background-image: url("/imagenes/ice.png");
+  background-size: cover;
+  background-position: center;
+  left: 0;
+  bottom:auto;  
+  display:block;
+  width: 100%;
+}
+
+.seccion-claraoscura {
+  color: rgb(255, 255, 255);
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-weight: 700;
+}
+
+.btn-info {
+  font-size: 1.1rem;
+  margin: 20px;
+}
+
+/* Barra de navegacion */
+
+.navbar {
+  padding: 2rem;
+  background-color: #ffffff;
+  align-items: center;
+
+  height: 110px;
+  width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+  position:fixed; /* Hacemos que la cabecera tenga una posición fija */
+  z-index: 2; /* Para sobreponer elementos, más valor = más arriba se posiciona el elemento */
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;  
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.navbar-nav li {
+  margin-left : 0.45em;
+  margin-right : 0.45em;
+  align-items: center;
+  margin-bottom: 0.3rem;
+  margin-top: 0.3rem;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.logo img {
+  width: 35px;
+  border-radius: 100px;
+}
+
+/* Seccion Hero */
+
+.text-primary {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.h1, h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #243c6d;
+}
+
+.hero {
+  min-height: 40px;
+  text-align: center;
+}
+
+.hero-principal {
+  padding-top: 150px;
+}
+
+/* Carrusel de Proyectos */
+
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin: 0 40px;
+  overflow: hidden;
+}
+.card{
+  border-radius: 31px;
+  background-color: #FFF;
+}
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 29px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 30px 0;
+}
+
+.overlay{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #5f75aa;
+  border-radius: 30px 30px 0px 0px;
+}
+.overlay::before,
+.overlay::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #010716;
+}
+.overlay::after{
+  background-color: #FFF;
+}
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #FFF;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.name{
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #243c6d;
+}
+.description{
+  font-size: 15px;
+  color: #0f0e0e;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+.button{
+  border: 4px;
+  font-size: 16px;
+  color: #243c6d;
+  padding: 8px 16px;
+  border-radius: 100px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: rgb(234, 234, 234);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.button:hover{
+  background: #bbcefc;
+}
+
+.swiper-navBtn{
+  color: #949292;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #243c6d;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 1.8rem;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: rgb(205, 205, 205);
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #5f75aa;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
+
+/* Pie de pagina (footer) */
+
+footer {
+  min-height: 500px;
+}
+
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+  background-color: #ffffff;
+}
+
+.iconos-redes-sociales i {
+  color: #243c6d;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: #243c6d;
+  border: 2px solid #ffffff;
+}
+
+.iconos-redes-sociales a:hover i {
+  color: #ffffff;
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: #ffffff;
+  padding: 20px;
+}
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+
+  .overlay i {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .testimonio-imagen {
+    height: 120px;
+    width: 120px;
+  }
+
+  .testimonio-texto {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 600px;
+  }
+}

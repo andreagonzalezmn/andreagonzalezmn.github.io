@@ -1,0 +1,365 @@
+/* FONTS: ExtraLight 200, ExtraLight 200 Italic, Medium 500 */
+/* COLORS: #243c6d (dark blue), #5f75aa (medium blue), #bbcefc (light blue), #ff85aa (pink), #69696c (grey text) */
+/* box-shadow: 0px 1px 4px 1px rgb(140, 140, 143) */
+
+/* Barra de navegacion */
+
+.navbar {
+  padding: 2rem;
+  background-color: #ffffff;
+  align-items: center;
+
+  height: 110px;
+  width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+  position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+  z-index: 2; /* Para sobreponer elementos, más valor = más arriba se posiciona el elemento */
+}
+
+.navbar-collapse {
+  align-items: center;
+  justify-content: space-between;  
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.navbar-nav li {
+  margin-left : 0.45em;
+  margin-right : 0.45em;
+  align-items: center;
+  margin-bottom: 0.3rem;
+  margin-top: 0.3rem;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.logo img {
+  width: 35px;
+  border-radius: 100px;
+}
+
+/* Estilos generales */
+
+.badges-contenedor1 {
+  font-size:larger;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #243c6d;
+}
+
+.seccion-oscura {
+  color: white;
+  background-image: url("/imagenes/ice.png");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment:initial;
+  background-position: center;
+}
+
+.seccion-claraoscura {
+  color: rgb(255, 255, 255);
+}
+
+.seccion-titulo {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.btn-info {
+  font-size: 1.1rem;
+  margin: 20px;
+}
+
+/* Seccion Hero */
+
+.hero {
+  min-height: 40px;
+  text-align: center;
+}
+
+.hero-principal {
+  padding: 3rem;
+}
+
+.hero-imagen-desarrollador {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+}
+
+/* Contacto */
+
+.contacto .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.contacto .rectangulo {
+  margin-top: -5rem;
+  background-color: #243c6d;
+  border-radius: 25px;
+  box-shadow: 0px 1px 4px 1px rgb(140, 140, 143);
+}
+
+.contacto .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.contacto .descripcion {
+  color: white;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+}
+
+.contacto button {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+  font-size: 18px;
+}
+
+.contacto button:hover {
+  background-color: white;
+  color: #243c6d;
+}
+
+.contacto button i {
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacto button:hover i {
+  color: #243c6d;
+}
+
+/* Experiencia */
+
+.experiencia {
+  padding: 40px 40px 60px 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #243c6d;
+}
+
+.experiencia .columna {
+  padding: 20px;
+  border: 1px solid #d8d8d8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+
+.experiencia .columna:hover {
+  color: #ffffff;
+  background-color: #243c6d;
+}
+
+.experiencia i {
+  font-size: 2.5rem;
+  color: #ffffff;
+  background-color: #5f75aa;
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+
+.experiencia-titulo {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.badges-contenedor {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.badge {
+  margin: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+/* Testimonios */
+
+.testimonios {
+  padding: 40px 40px 40px 40px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #243c6d;
+}
+
+.testimonios .carousel {
+  max-width: 800px;
+}
+
+.testimonios .seccion-descripcion {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #000000;
+  font-size: 17px;
+  text-align: center; /*Centrar el texto*/
+  line-height: normal; /*Establece el interlineado*/
+  line-height: 24px;
+}
+
+.carousel-item {
+  height: 420px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+
+.testimonio-imagen {
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+}
+
+.testimonio-texto {
+  max-width: 70%;
+  font-size: 17px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #243c6d;
+}
+
+.testimonio-info {
+  font-weight: bold;
+  text-align: center;
+  padding: 1rem;
+}
+
+.testimonio-info p {
+  margin-bottom: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #243c6d;
+}
+
+.testimonio-footer .cliente {
+  font-size: 1.2rem;
+}
+
+.testimonio-info .cargo {
+  font-size: 0.9rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #727376;
+}
+
+/* Pie de pagina (footer) */
+
+footer {
+  min-height: 500px;
+}
+
+.footer-logo {
+  height: 80px;
+  width: 80px;
+  margin: 10px;
+}
+
+.iconos-redes-sociales a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+  background-color: #ffffff;
+}
+
+.iconos-redes-sociales i {
+  color: #243c6d;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: #243c6d;
+  border: 2px solid #ffffff;
+}
+
+.iconos-redes-sociales a:hover i {
+  color: #ffffff;
+}
+
+.derechos-de-autor {
+  font-size: 15px;
+  color: #ffffff;
+  padding: 20px;
+}
+
+/* Adaptable (Responsivo) */
+
+@media screen and (max-width: 400px) {
+  .overlay p {
+    font-size: 18px;
+  }
+
+  .overlay i {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .testimonio-imagen {
+    height: 120px;
+    width: 120px;
+  }
+
+  .testimonio-texto {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .hero-inferior-imagen {
+    max-width: 600px;
+  }
+}
