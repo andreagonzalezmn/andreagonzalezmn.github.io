@@ -1,0 +1,261 @@
+/* FONTS: ExtraLight 200, ExtraLight 200 Italic, Medium 500 */
+/* COLORS: #243c6d (dark blue), #5f75aa (medium blue), #bbcefc (light blue), #ff85aa (pink), #727376 (grey text), #0f6cfd (BLUE COOL) */
+/* box-shadow: 0px 1px 4px 1px rgb(140, 140, 143) */
+
+/* Barra de navegacion */
+
+.navbar {
+    padding: 2rem;
+    background-color: #ffffff;
+    align-items: center;
+  
+    height: 110px;
+    width: 100%; /* hacemos que la cabecera ocupe el ancho completo de la página */
+    position: fixed; /* Hacemos que la cabecera tenga una posición fija */
+    z-index: 2; /* Para sobreponer elementos, más valor = más arriba se posiciona el elemento */
+  }
+  
+  .navbar-collapse {
+    align-items: center;
+    justify-content: space-between;  
+    background-color: #ffffff;
+    border-radius: 30px;
+  }
+  
+  .navbar-nav li {
+    margin-left : 0.45em;
+    margin-right : 0.45em;
+    align-items: center;
+    margin-bottom: 0.3rem;
+    margin-top: 0.3rem;
+  }
+  
+  .navbar-toggler {
+    border: none;
+  }
+  
+  .logo img {
+    width: 35px;
+    border-radius: 100px;
+  }
+  
+  /* Estilos generales */
+
+  .badges-contenedor1 {
+    font-size:larger;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: Medium 500;
+    color: #243c6d;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: Medium 500;
+    color: #243c6d;
+  }
+
+  h6 {
+    font-size: 1rem;
+    font-weight: Medium 500;
+    color:#0f6cfd;
+    padding-bottom: 1%;
+  }
+
+  h8 {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #323235;
+    font-weight: bold;
+  }
+
+  h9 {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #727376;
+  }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #28282b;
+    padding-top: 1%;
+  }
+  
+  .seccion-oscura {
+    color: white;
+    background-image: url("/imagenes/ice.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: initial;
+    background-position: center;
+  }
+  
+  .seccion-claraoscura {
+    color: rgb(255, 255, 255);
+  }
+  
+  .seccion-titulo {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: Medium 500;
+  }
+
+  /* Portada del proyecto */
+
+  .btn {
+    padding: 14px 18px;
+    border-width: 2px;
+    border-radius: 100px;
+    margin: 10px;
+}
+
+  .hero {
+    background-image: url(../Meditacion/imagenes/galaxia.png);
+    background-repeat: no-repeat; /* Para que la imagen de fondo no se repita */
+    background-size: cover; /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(21, 20, 51, 0.8);
+    z-index: -1;
+}
+
+/* Services */
+
+.container1{
+  background-color: #161617;
+}
+
+section {
+    background-color: white;
+}
+
+.card-effect {
+    padding: 25px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    transition: all 0.35s ease;
+    text-align: center;
+}
+
+.card-effect2{
+  padding: 25px;
+  padding-top: 70px;
+  padding-bottom: 50px;
+  transition: all 0.35s ease;
+}
+
+.card-effect:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+img {
+    border-radius: 30px;
+}
+
+  /* Pie de pagina (footer) */
+  
+  footer {
+    min-height: 500px;
+  }
+  
+  .footer-logo {
+    height: 80px;
+    width: 80px;
+    margin: 10px;
+  }
+  
+  .iconos-redes-sociales a {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    margin: 10px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+    background-color: #ffffff;
+  }
+  
+  .iconos-redes-sociales i {
+    color: #243c6d;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+  }
+  
+  .iconos-redes-sociales a:hover {
+    background-color: #243c6d;
+    border: 2px solid #ffffff;
+  }
+  
+  .iconos-redes-sociales a:hover i {
+    color: #ffffff;
+  }
+  
+  .derechos-de-autor {
+    font-size: 15px;
+    color: #ffffff;
+    padding: 20px;
+  }
+  
+  /* Adaptable (Responsivo) */
+  
+  @media screen and (max-width: 400px) {
+    .overlay p {
+      font-size: 18px;
+    }
+  
+    .overlay i {
+      font-size: 40px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .navbar-brand {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+    .testimonio-imagen {
+      height: 120px;
+      width: 120px;
+    }
+  
+    .testimonio-texto {
+      font-size: 18px;
+    }
+  }
+  
+  @media screen and (min-width: 700px) {
+    .hero-inferior-imagen {
+      max-width: 600px;
+    }
+  }
